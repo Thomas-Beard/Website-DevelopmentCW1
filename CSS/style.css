@@ -20,14 +20,14 @@ a {
 header, footer {
     background-color: white;
     color: black;
-    padding: 20px;
+    padding: 5 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 header .logo, .footer-logo {
-    height: 140px;
+    height: 80px;
 }
 
 header nav a, footer nav a {
@@ -54,23 +54,62 @@ header nav a, footer nav a {
     width: 300px;
 }
 
+.nine h1 {
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #222;
+    letter-spacing: 1px;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.nine h2 span {
+    margin-top: 5px;
+    font-size: 15px;
+    color: #444;
+    word-spacing: 1px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.nine h2 span:after,
+.nine h2 span:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    height: 5px;
+    background-color: #f8f8f8;
+}
+
 /* Welcome Section */
 .welcome-section {
     display: flex;
     background-color: #8fbc8f;
     padding: 50px;
     color: white;
+    padding: 0;
 }
 
 .welcome-text {
     flex: 1;
-    padding-right: 20px;
+    padding-right: 40px;
+    text-align: left;
 }
 
 .food-image {
-    flex: 1;
-    width: 400px;
-    height: auto;
+    height: 100%;
+    max-width: 700px; /* Limit the width to control size */
+    object-fit: cover;
 }
 
 /* Contact Section */
@@ -90,13 +129,13 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
+    padding: 20px;
     background-color: white;
 }
 
 footer nav {
     display: flex;
-    gap: 20px;
+    gap: 10px;
     margin-bottom: 15px;
 }
 
@@ -107,7 +146,7 @@ footer nav a {
 }
 
 footer .footer-logo {
-    height: 140px; /* Further increase footer logo size */
+    height: 100px;
     margin-top: 10px;
 }
 
