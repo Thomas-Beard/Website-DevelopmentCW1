@@ -54,9 +54,30 @@ header nav a, footer nav a {
     width: 300px;
 }
 
+
+/* Welcome Section */
+.welcome-section {
+    display: flex;
+    align-items: center;
+    background-color: #8fbc8f;
+    padding: 50px;
+    color: white;
+    padding: 0;
+    height: 100%;
+}
+
+.welcome-text {
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.6; /* Improve readability for accessability */
+    margin-top: 10px;
+    color: black;
+    font-family: sans-serif;
+}
+
 .nine h1 {
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
     text-transform: uppercase;
     color: #222;
     letter-spacing: 1px;
@@ -65,9 +86,9 @@ header nav a, footer nav a {
     margin-bottom: 20px;
 }
 
-.nine h2 span {
+.nine h1 span {
     margin-top: 5px;
-    font-size: 15px;
+    font-size: 10px;
     color: #444;
     word-spacing: 1px;
     font-weight: normal;
@@ -81,8 +102,8 @@ header nav a, footer nav a {
     gap: 20px;
 }
 
-.nine h2 span:after,
-.nine h2 span:before {
+.nine h1 span:after,
+.nine h1 span:before {
     content: " ";
     display: block;
     border-bottom: 1px solid #ccc;
@@ -91,25 +112,11 @@ header nav a, footer nav a {
     background-color: #f8f8f8;
 }
 
-/* Welcome Section */
-.welcome-section {
-    display: flex;
-    background-color: #8fbc8f;
-    padding: 50px;
-    color: white;
-    padding: 0;
-}
-
-.welcome-text {
-    flex: 1;
-    padding-right: 40px;
-    text-align: left;
-}
-
 .food-image {
     height: 100%;
-    max-width: 700px; /* Limit the width to control size */
+    max-width: 600px; /* Limit the width to control size so it doesn't go over the border*/
     object-fit: cover;
+    flex: 1;
 }
 
 /* Contact Section */
