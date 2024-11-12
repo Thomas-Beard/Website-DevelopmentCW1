@@ -1,0 +1,107 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #f0f0f0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+header, footer {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo, .footer-logo {
+    height: 60px;
+}
+
+header nav a, footer nav a {
+    color: black;
+    font-weight: bold;
+}
+
+/* Title Section */
+.title-section {
+    position: relative;
+    text-align: center;
+}
+
+.restaurant-image {
+    width: 100%;
+    height: auto;
+}
+
+.title-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+}
+
+/* Welcome Section */
+.welcome-section {
+    display: flex;
+    background-color: #8fbc8f;
+    padding: 50px;
+    color: white;
+}
+
+.welcome-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.food-image {
+    flex: 1;
+    width: 400px;
+    height: auto;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: black;
+    padding: 40px;
+    color: white;
+    text-align: center;
+}
+
+.contact-section h2 {
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+footer nav {
+    margin-bottom: 15px;
+}
+
+footer nav a {
+    margin: 0 10px;
+    color: white;
+}
+
+footer p {
+    margin-top: 15px;
+}
