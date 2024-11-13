@@ -76,7 +76,7 @@ header nav a, footer nav a {
     font-family: sans-serif;
 }
 
-.nine h1 {
+.nine h1 { /* Font style from https://codepen.io/vedadesigns/pen/GPxYZg*/
     text-align: center;
     font-size: 30px;
     text-transform: uppercase;
