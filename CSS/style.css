@@ -19,8 +19,9 @@ a {
 }
 
 header, footer {
-    background-color: white;
-    color: black;
+    background-color: rgb(0, 0, 0, 0);
+    transition: background-color 0.3s ease;
+    color: white;
     padding: 5 15px;
     display: flex;
     align-items: center;
@@ -30,17 +31,43 @@ header, footer {
     z-index: 9;
 }
 
+.header {
+    background-color: rgba(0, 0, 0, 0); /* Transparent initially */
+    transition: background-color 0.3s ease;
+    color: white;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed; /* Fixed to stay at the top */
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.header.scrolled {
+    background-color: rgba(0, 0, 0, 1); /* Solid black when scrolled */
+}
+
 header .logo, .footer-logo {
     height: 80px;
 }
 
 header nav a, footer nav a {
-    color: black;
+    color: white;
     font-weight: bold;
+}
+
+.header nav a {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+
 }
 
 /* Title Section */
 .title-section {
+    margin-top: 80px;
     position: relative;
     text-align: center;
 }
@@ -48,6 +75,7 @@ header nav a, footer nav a {
 .restaurant-image {
     width: 100%;
     height: auto;
+    display: block;
 }
 
 .title-logo {
