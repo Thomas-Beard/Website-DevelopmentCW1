@@ -47,6 +47,7 @@ header, footer {
 
 .header.scrolled {
     background-color: rgba(0, 0, 0, 1); /* Solid black when scrolled */
+    color: white;
 }
 
 header .logo, .footer-logo {
@@ -59,10 +60,25 @@ header nav a, footer nav a {
 }
 
 .header nav a {
-    color: white;
+    color: black;
     font-weight: bold;
     transition: color 0.3s ease;
+}
 
+.header.scrolled nav a {
+    color: white;
+}
+
+.logo-white {
+    display: none;
+}
+
+.header.scrolled .logo-black {
+    display: none; /* Hide black logo after scrolling */
+}
+
+.header.scrolled .logo-white {
+    display: inline; /* Show white logo after scrolling */
 }
 
 /* Title Section */
