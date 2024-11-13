@@ -123,15 +123,53 @@ header nav a, footer nav a {
 
 /* Contact Section */
 .contact-section {
-    background-color: black;
-    padding: 40px;
+    position: relative;
+    padding: 80px 20px;
     color: white;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    /*background-color: black;
+    padding: 40px;
+    color: white;
+    text-align: center;*/
 }
 
-.contact-section h2 {
-    margin-bottom: 20px;
+.contact-section .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0.5; /* Adjust opacity for readability */
 }
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    z-index: 1; /* Place content over the background image */
+    color: white;
+}
+
+.contact-left, .contact-right {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-left h2, .contact-right h2 {
+    margin-bottom: 15px;
+}
+
+
+/*.contact-section h2 {
+    margin-bottom: 20px;
+}*/
 
 /* Footer */
 footer {
