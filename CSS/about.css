@@ -105,18 +105,16 @@ main {
     display: block;
 }
 
-/* Awards Section  */
+/* Awards Section */
 .awards-section {
-    position: relative; 
-    background-color: rgba(0, 0, 0, 0.9); 
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.9);
     padding: 50px 20px;
     text-align: center;
     color: white;
     width: 100%;
-    /* max-width: 100%; */
     box-sizing: border-box;
     border-radius: 8px;
-    z-index: 1;
 }
 
 .awards-section h2 {
@@ -124,22 +122,26 @@ main {
     margin-bottom: 20px;
 }
 
-/* Container for awards logos */
+/* Container for awards */
 .awards-container {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+    gap: 10px;
     padding: 20px 0;
+    flex-wrap: nowrap; 
 }
 
-/* Styling for award logos */
+/* Styling award */
 .award-logo {
-    max-width: 150px;
+    flex-grow: 1; 
+    max-width: 120px; 
     height: auto;
-    display: inline-block;
-    margin: 10px;
-    filter: brightness(0) invert(1);
+    display: block;
+    filter: brightness(0) invert(1); 
+    margin: 0 10px; 
+    object-fit: contain;
 }
 
 .footer {
