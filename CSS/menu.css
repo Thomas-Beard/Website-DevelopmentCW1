@@ -1,0 +1,39 @@
+/* Header Styling */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: white; 
+    transition: background-color 0.3s ease;
+    z-index: 10;
+}
+
+
+.header.scrolled {
+    background-color: black;
+}
+
+.logo {
+    height: 50px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.header.scrolled .nav-links a {
+    color: white;
+}
+
