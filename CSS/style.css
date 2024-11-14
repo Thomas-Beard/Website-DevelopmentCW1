@@ -228,6 +228,29 @@ header nav a, footer nav a {
 }
 
 
+/* Social Media Section */
+.social-media-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: black;
+    font-size: 1.1em;
+    border-top: 1px solid #ccc;
+}
+
+.social-media-section a {
+    color: #0073e6;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.social-media-section a:hover {
+    text-decoration: underline;
+}
+
+
+
 
 
 /* Footer */
