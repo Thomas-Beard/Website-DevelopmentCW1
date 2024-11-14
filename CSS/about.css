@@ -119,6 +119,29 @@ main {
     z-index: 1;
 }
 
+.awards-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Container for awards logos */
+.awards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+/* Styling for award logos */
+.award-logo {
+    max-width: 150px;
+    height: auto;
+    display: inline-block;
+    margin: 10px;
+    filter: brightness(0) invert(1);
+}
+
 .footer {
     background-color: transparent;
     text-align: center;
