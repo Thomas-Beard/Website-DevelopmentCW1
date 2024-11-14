@@ -286,10 +286,10 @@ footer nav a {
     font-weight: bold;
 }
 
-footer .footer-logo {
+/* footer .footer-logo {
     height: 80px;
-    margin: 20px 0; /* Add vertical spacing around the logo */
-}
+    margin: 20px 0; /* Add vertical spacing around the logo 
+} */
 
 footer p {
     margin-top: 10px;
