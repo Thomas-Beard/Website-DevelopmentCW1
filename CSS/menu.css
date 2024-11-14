@@ -75,7 +75,7 @@
     background-image: url('IMG/food/food-5.jpeg');
     background-size: cover;
     background-position: center;
-    height: 500px; /* Match the height of the index title section */
+    height: 500px; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -89,4 +89,54 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     position: relative;
     z-index: 1;
+}
+
+/* Menu Container */
+.menu-container {
+    display: flex;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Aside Section */
+.menu-aside {
+    flex: 1;
+    background-color: #e0e0e0;
+    padding: 20px;
+}
+
+.menu-aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-aside ul li {
+    margin-bottom: 10px;
+}
+
+.menu-aside button {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: left;
+    padding: 10px;
+}
+
+.menu-aside button:hover {
+    color: darkgray;
+}
+
+/* Content Section */
+.menu-content {
+    flex: 3;
+    color: black;
+    padding: 20px;
+}
+
+.menu-content img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin: 10px 0;
 }
