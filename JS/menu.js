@@ -21,24 +21,41 @@ function showCourse(courseId) {
 }
 
 // Continuous Scrolling for Reviews Carousel
-let scrollAmount = 0;
+let scrollPosition = 0;
+const scrollSpeed = 1;
 
 function continuousScroll() {
-    const carousel = document.querySelector('.reviews-carousel');
+    const carousel = document.querySelector('.reviews-track');
     const reviews = document.querySelectorAll('.review');
-    const reviewWidth = reviews[0].offsetWidth + 20; // Width of each review + margin
+    const reviewWidth = reviews[0].offsetWidth + 20; // Review width + margin
 
-    scrollAmount -= 1; // Adjust scroll speed here
+    // Move the carousel to the left
+    scrollPosition -= scrollSpeed;
 
-    if (Math.abs(scrollAmount) >= reviewWidth * reviews.length) {
-        scrollAmount = 0; // Reset scroll to the start
+    // Reset to the start if we reach the end of all reviews
+    if (Math.abs(scrollPosition) >= reviewWidth * reviews.length) {
+        scrollPosition = 0; // Reset the scroll position for continuous loop
     }
 
-    carousel.style.transform = `translateX(${scrollAmount}px)`;
+    carousel.style.transform = `translateX(${scrollPosition}px)`;
 }
 
-// Start continuous scrolling
+// Duplicate reviews to create an infinite scrolling effect
+function initializeCarousel() {
+    const carousel = document.querySelector('.reviews-track');
+    const reviews = document.querySelectorAll('.review');
+
+    // Clone each review and append it to the carousel
+    reviews.forEach(review => {
+        const clone = review.cloneNode(true);
+        carousel.appendChild(clone);
+    });
+}
+
+// Initialize and start the auto-scroll
+initializeCarousel();
 setInterval(continuousScroll, 20); // Adjust interval for smoother or faster scrolling
+
 
 
 
