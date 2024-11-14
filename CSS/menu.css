@@ -174,3 +174,17 @@
     height: auto;
     margin-bottom: 20px;
 }
+
+/* Reviews Section */
+.reviews-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.reviews-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
