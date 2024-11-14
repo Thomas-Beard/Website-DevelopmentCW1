@@ -47,3 +47,32 @@
 .content-section.reverse {
     flex-direction: row-reverse;
 }
+
+/* Overlay box styling */
+.content-section.with-box .overlay {
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    position: relative;
+    z-index: 1; 
+    width: 100%; 
+    box-sizing: border-box; /* Ensures padding doesn’t expand width */
+}
+
+.content-section.with-box .overlay .text {
+    color: white;
+    font-family: Arial, sans-serif;
+    flex: 1;
+    padding: 10px;
+}
+
+.content-section.with-box .overlay .image img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    flex: 1;
+}
