@@ -5,6 +5,19 @@ function showCourse(courseId) {
     });
     // Display the selected course
     document.getElementById(courseId).style.display = 'block';
+
+
+    // animation button
+    document.querySelectorAll('.menu-aside button').forEach(button => {
+        button.classList.remove('clicked');
+    });
+
+    const clickedButton = document.querySelector(`button[onclick="showCourse('${courseId}')"]`);
+    clickedButton.classList.add('clicked');
+
+    setTimeout(() => {
+        clickedButton.classList.remove('clicked');
+    }, 200); // Animation duration in milliseconds
 }
 
 window.addEventListener('scroll', function() {
@@ -15,3 +28,5 @@ window.addEventListener('scroll', function() {
         header.classList.remove('scrolled');
     }
 });
+
+
