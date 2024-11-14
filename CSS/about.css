@@ -26,8 +26,24 @@
     color: white;
     text-transform: uppercase;
     z-index: 1; /* Keeps text above the background */
-    position: absolute; /* Ensures it is centered relative to the section */
+    position: absolute; 
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Perfectly centers the text */
+    transform: translate(-50%, -50%); 
+}
+
+.content-section {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    align-items: center;
+    background-image: url('../IMG/background/rose-bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: black; 
+}
+
+.content-section.reverse {
+    flex-direction: row-reverse;
 }
