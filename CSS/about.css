@@ -76,3 +76,24 @@
     display: block;
     flex: 1;
 }
+
+.content-section .text,
+.content-section .image {
+    flex: 1;
+    padding: 20px;
+}
+
+.content-section .text {
+    color: black;
+    font-family: Arial, sans-serif;
+}
+
+.content-section .image img {
+    width: 100%;
+    max-width: 700px; 
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+}
