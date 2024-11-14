@@ -132,6 +132,11 @@
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.menu-aside button.clicked {
+    transform: scale(1.05); /* Slightly enlarge the button */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* White glow effect */
+}
+
 .menu-aside button:hover {
     color: darkgray;
 }   
