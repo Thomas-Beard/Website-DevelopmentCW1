@@ -133,8 +133,8 @@
 }
 
 .menu-aside button.clicked {
-    transform: scale(1.05); /* Slightly enlarge the button */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* White glow effect */
+    transform: scale(1.05); 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); 
 }
 
 .menu-aside button:hover {
@@ -198,7 +198,7 @@
     position: relative;
 }
 
-/* Track with flex to show reviews side-by-side */
+/* show reviews side-by-side */
 .reviews-track {
     display: flex;
     transition: transform 0.1s linear;
