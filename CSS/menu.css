@@ -199,9 +199,16 @@
     position: relative;
 }
 
+/* Inner wrapper to enable infinite scroll */
+.reviews-track {
+    display: flex;
+    transition: transform 0.1s linear;
+    will-change: transform;
+}
+
 /* Individual Review Styling */
 .review {
-    min-width: 300px; /* Adjust width to show multiple reviews side-by-side */
+    min-width: 300px;
     max-width: 300px;
     box-sizing: border-box;
     padding: 20px;
