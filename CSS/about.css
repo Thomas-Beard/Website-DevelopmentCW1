@@ -105,6 +105,20 @@ main {
     display: block;
 }
 
+/* Awards Section  */
+.awards-section {
+    position: relative; 
+    background-color: rgba(0, 0, 0, 0.9); 
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+    width: 100;
+    max-width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    z-index: 1;
+}
+
 .footer {
     background-color: transparent;
     text-align: center;
