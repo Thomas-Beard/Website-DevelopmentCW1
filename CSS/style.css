@@ -107,7 +107,7 @@ header nav a, footer nav a {
 .welcome-section {
     display: flex;
     align-items: center;
-    background-color: #8fbc8f;
+    background-color: #161515;
     padding: 50px;
     color: white;
     padding: 0;
@@ -119,7 +119,7 @@ header nav a, footer nav a {
     font-size: 15px;
     line-height: 1.6;
     margin-top: 10px;
-    color: black;
+    color: rgb(255, 255, 255);
     font-family: sans-serif;
 }
 
@@ -127,7 +127,7 @@ header nav a, footer nav a {
     text-align: center;
     font-size: 30px;
     text-transform: uppercase;
-    color: #222;
+    color: #e0dede;
     letter-spacing: 1px;
     font-family: "Playfair Display", serif;
     font-weight: 400;
@@ -137,7 +137,7 @@ header nav a, footer nav a {
 .nine h1 span {
     margin-top: 5px;
     font-size: 10px;
-    color: #444;
+    color: #d2d2d2;
     word-spacing: 1px;
     font-weight: normal;
     letter-spacing: 2px;
