@@ -37,11 +37,18 @@
     flex-direction: row;
     padding: 50px;
     align-items: center;
-    background-image: url('../IMG/background/rose-bg.jpeg');
+    /* background-image: url('../IMG/background/rose-bg.jpeg'); */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     color: black; 
+}
+
+main {
+    background-image: url('../IMG/background/rose-bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .content-section.reverse {
