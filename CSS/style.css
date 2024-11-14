@@ -32,7 +32,7 @@ header, footer {
 }
 
 .header {
-    background-color: rgba(0, 0, 0, 0); /* Transparent initially */
+    background-color: rgba(0, 0, 0, 0);
     transition: background-color 0.3s ease;
     color: white;
     padding: 5px 15px;
@@ -46,7 +46,7 @@ header, footer {
 }
 
 .header.scrolled {
-    background-color: rgba(0, 0, 0, 1); /* Solid black when scrolled */
+    background-color: rgba(0, 0, 0, 1);
     color: white;
 }
 
@@ -123,7 +123,7 @@ header nav a, footer nav a {
     font-family: sans-serif;
 }
 
-.nine h1 { /* Font style from https://codepen.io/vedadesigns/pen/GPxYZg*/
+.nine h1 { /* Font style from https://codepen.io/vedadesigns/pen/GPxYZg */
     text-align: center;
     font-size: 30px;
     text-transform: uppercase;
@@ -162,11 +162,13 @@ header nav a, footer nav a {
 
 .food-image {
     height: 100%;
-    max-width: 600px; /* Limit the width to control size so it doesn't go over the border*/
+    max-width: 600px;
     width: 50vw;
     object-fit: cover;
     flex: 1;
 }
+
+
 
 /* Contact Section */
 .contact-section {
@@ -195,7 +197,7 @@ header nav a, footer nav a {
     justify-content: space-between;
     width: 80%;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 1; /* Ensure text is above the background */
     border-radius: 10px;
     color: white;
@@ -209,7 +211,7 @@ header nav a, footer nav a {
 
 
 .contact-left h2, .contact-right h2 {
-    color: #ffffff; /* High contrast color */
+    color: #ffffff;
     margin-bottom: 10px;
     font-size: 1.5em;
 }
@@ -224,6 +226,8 @@ header nav a, footer nav a {
     list-style: none; /* Remove bullet points */
     padding: 0;
 }
+
+
 
 
 /* Footer */
