@@ -37,3 +37,56 @@
     color: white;
 }
 
+.one h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    color: white;
+    font-size: 4rem;
+}
+
+.one h1:before {
+    width: 28px;
+    height: 5px;
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    margin-left: -14px;
+    background-color: #b80000;
+}
+
+.one h1:after {
+    width: 100px;
+    height: 1px;
+    display: block;
+    content: "";
+    position: relative;
+    margin-top: 25px;
+    left: 50%;
+    margin-left: -50px;
+    background-color: #b80000;
+}
+
+/* Title Section */
+.title-section {
+    position: relative;
+    background-image: url('IMG/food/food-5.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 500px; /* Match the height of the index title section */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.title-text {
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    position: relative;
+    z-index: 1;
+}
