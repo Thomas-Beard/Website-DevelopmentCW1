@@ -20,25 +20,27 @@ function showCourse(courseId) {
     }, 200); // Animation duration in milliseconds
 }
 
-// Review Carousel Auto-Slide
-let currentIndex = 0;
+// Continuous Scrolling for Reviews Carousel
+let scrollAmount = 0;
 
-function slideReviews() {
+function continuousScroll() {
     const carousel = document.querySelector('.reviews-carousel');
     const reviews = document.querySelectorAll('.review');
-    currentIndex++;
+    const reviewWidth = reviews[0].offsetWidth + 20; // Width of each review + margin
 
-    // Reset to first review if at the end
-    if (currentIndex >= reviews.length) {
-        currentIndex = 0;
+    scrollAmount -= 1; // Adjust scroll speed here
+
+    if (Math.abs(scrollAmount) >= reviewWidth * reviews.length) {
+        scrollAmount = 0; // Reset scroll to the start
     }
 
-    // Slide effect using transform
-    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+    carousel.style.transform = `translateX(${scrollAmount}px)`;
 }
 
-// Set interval for auto-slide
-setInterval(slideReviews, 3000); // Slide every 3 seconds
+// Start continuous scrolling
+setInterval(continuousScroll, 20); // Adjust interval for smoother or faster scrolling
+
+
 
 
 window.addEventListener('scroll', function() {

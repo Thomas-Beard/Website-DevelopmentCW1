@@ -188,3 +188,38 @@
     color: #333;
     margin-bottom: 20px;
 }
+
+/* Carousel Container */
+.reviews-carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Individual Review Styling */
+.review {
+    min-width: 300px; /* Adjust width to show multiple reviews side-by-side */
+    max-width: 300px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    margin: 0 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
+
+.review h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.review p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 5px;
+}
