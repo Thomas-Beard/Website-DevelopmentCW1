@@ -5,7 +5,7 @@
     height: 400px;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Keeps the background fixed when scrolling */
+    background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
