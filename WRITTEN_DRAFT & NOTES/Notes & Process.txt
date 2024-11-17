@@ -20,7 +20,7 @@ Process of developing the Lancaster Restaurant Website:
    1. Design the draft of the page(s)
    2. Develop HTML, then CSS & JS
    3. Start with the header, title & footer, as all pages on the website will have the similar design &/ interaction
-   4. Think in the perspective of the reader; what do they want to see in terms of what they are looking for? (Pictures say a thousand words)
+   4. Think in the perspective of the user; what do they want to see in terms of what they are looking for? (Pictures say a thousand words)
    5. Re-use some css & js code as styling & interaction can be repetitive
    6. Use and reference fonts used
    7. Keep in mind !!accessibility!!
