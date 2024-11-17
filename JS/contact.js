@@ -6,3 +6,14 @@ window.addEventListener("scroll", function() {
         header.classList.remove("scrolled");
     }
 });
+
+function showThankYouMessage(event) {
+    event.preventDefault(); 
+    const thankYouMessage = document.getElementById("thank-you-message");
+    thankYouMessage.classList.remove("hidden"); // Show the message
+}
+
+function hideThankYouMessage() {
+    const thankYouMessage = document.getElementById("thank-you-message");
+    thankYouMessage.classList.add("hidden"); // Hide the message
+}
