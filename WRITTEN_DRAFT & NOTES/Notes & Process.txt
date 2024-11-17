@@ -24,5 +24,6 @@ Process of developing the Lancaster Restaurant Website:
    5. Re-use some css & js code as styling & interaction can be repetitive
    6. Use and reference fonts used
    7. Keep in mind !!accessibility!!
+   8. Some ideas were scratched, having links at the footer will be hard for the user to constantly scroll down
 
 Github Repository Link: https://github.com/Thomas-Beard/Website-DevelopmentCW1
