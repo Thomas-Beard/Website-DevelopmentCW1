@@ -58,3 +58,70 @@
     height: 300px;
     border: 0;
 }
+
+/* Employee Contact Section */
+.employee-contact-section {
+    position: relative;
+    background: url("../IMG/people/robert-pour.jpeg") no-repeat center center/cover;
+    padding: 80px 20px;
+    color: white;
+    text-align: center;
+}
+
+.employee-contact-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.employee-contact-container h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.employee-contact-container p {
+    margin-bottom: 30px;
+    font-size: 1rem;
+}
+
+.employee-contact-container a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+.employee-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.employee-form label {
+    text-align: left;
+    font-size: 1rem;
+}
+
+.employee-form input,
+.employee-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.employee-form button {
+    padding: 10px 20px;
+    background-color: #ffd700;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.employee-form button:hover {
+    background-color: #e6c200;
+}
