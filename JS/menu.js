@@ -1,5 +1,4 @@
 function showCourse(courseId) {
-    // Hide all course sections
     document.querySelectorAll('.course-section').forEach(section => {
         section.style.display = 'none';
     });
@@ -17,10 +16,10 @@ function showCourse(courseId) {
 
     setTimeout(() => {
         clickedButton.classList.remove('clicked');
-    }, 200); // Animation duration in milliseconds
+    }, 200);
 }
 
-// Continuous Scrolling for Reviews Carousel
+// endless scrolling for reviews carousel 
 let scrollPosition = 0;
 const scrollSpeed = 1;
 
@@ -52,12 +51,8 @@ function initializeCarousel() {
     });
 }
 
-// Initialize and start the auto-scroll
 initializeCarousel();
-setInterval(continuousScroll, 20); // Adjust interval for smoother or faster scrolling
-
-
-
+setInterval(continuousScroll, 20); 
 
 
 window.addEventListener('scroll', function() {
