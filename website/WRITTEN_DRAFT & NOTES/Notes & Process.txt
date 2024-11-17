@@ -31,5 +31,6 @@ Process of developing the Lancaster Restaurant Website:
       9c. https://www.w3schools.com/css/css_form.asp
       9d. https://www.w3schools.com/js/js_variables.asp
       9e. https://www.w3schools.com/js/js_htmldom_document.asp
+   10. Include PlaceHolders for large bits of information (required)
 
 Github Repository Link: https://github.com/Thomas-Beard/Website-DevelopmentCW1
