@@ -5,8 +5,6 @@ function showCourse(courseId) {
     // Display the selected course
     document.getElementById(courseId).style.display = 'block';
 
-
-    // animation button
     document.querySelectorAll('.menu-aside button').forEach(button => {
         button.classList.remove('clicked');
     });

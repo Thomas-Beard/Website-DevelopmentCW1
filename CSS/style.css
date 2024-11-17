@@ -39,7 +39,7 @@ header, footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed; /* Fixed to stay at the top */
+    position: fixed; 
     top: 0;
     width: 100%;
     z-index: 10;
@@ -198,7 +198,7 @@ header nav a, footer nav a {
     width: 80%;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.7);
-    z-index: 1; /* Ensure text is above the background */
+    z-index: 1; 
     border-radius: 10px;
     color: white;
 }
@@ -250,13 +250,13 @@ header nav a, footer nav a {
 }
 
 .social-icon {
-    width: 30px; /* Small icon size */
+    width: 30px; 
     height: auto;
     transition: transform 0.2s ease;
 }
 
 .social-icon:hover {
-    transform: scale(1.1); /* Slightly enlarge icon on hover */
+    transform: scale(1.1); /* Slightly enlarge icon when user hovers over it */
 }s
 
 
@@ -285,7 +285,7 @@ footer nav a {
 
 footer .footer-logo {
     height: 80px;
-    margin: 20px 0; /* Add vertical spacing around the logo */
+    margin: 20px 0; 
 }
 
 footer p {
